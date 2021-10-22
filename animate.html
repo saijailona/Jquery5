@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animate</title>
+</head>
+
+<body>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #navbar {
+            width: 100%;
+            position: fixed;
+            margin: 20px;
+            opacity: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        #fpage {
+            width: 100%;
+            background-color: #CCC;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        #spage {
+            width: 100%;
+            background-color: #CC0;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        #flexbox {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+
+
+    <div id="topbar"> </div>
+
+    <nav id="navbar">
+        <ul style="list-style-type: none; font-size: 17px;">
+            <li>
+                <a href="#fpage">First page</a>
+            </li>
+            <li>
+                <a href="#spage">Second page</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="flexbox">
+        <section id="fpage">
+            <h1>First page</h1>
+        </section>
+        <section id="spage">
+            <h1>Second page</h1>
+        </section>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery5.js"></script>
+
+</body>
+
+</html>
